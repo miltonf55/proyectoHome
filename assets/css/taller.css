@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F0EDE7;
+}
+
+.piedroso{
+  position: fixed;
+  top: 60.5%;
+  width: 20%;
+  left: 80%;
+  z-index: 5555;
+  cursor:pointer;
+}
+
+.piedroso:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.tall{
+  text-align: center;
+  font-size: 1.5rem;
+  top: 9.8%;
+  position: relative;
+}
+
+.cont {
+  margin-bottom: 10%;
+  padding-top: 10%;
+}
+
+.stack {
+  width: 85%;
+  max-width: 500px;
+  transition: 0.25s ease;
+  margin-bottom: 15%;
+}
+
+.stack:hover {
+  transform: rotate(5deg);
+}
+
+.stack:hover .card:before {
+  transform: translatey(-2%) rotate(-4deg);
+}
+
+.stack:hover .card:after {
+  transform: translatey(2%) rotate(4deg);
+}
+
+.card {
+  aspect-ratio: 3/2;
+  border: 4px solid;
+  background-color: #FFF;
+  position: relative;
+  transition: 0.15s ease;
+  cursor: pointer;
+  padding: 5% 5% 15% 5%;
+}
+
+.card:before,
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 4px solid;
+  background-color: #FFF;
+  transform-origin: center center;
+  z-index: -1;
+  transition: 0.15s ease;
+  top: 0;
+  left: 0;
+}
+
+.card:before {
+  transform: translatey(-2%) rotate(-6deg);
+}
+
+.card:after {
+  transform: translatey(2%) rotate(6deg);
+}
+
+.image {
+  width: 100%;
+  border: 4px solid;
+  background-color: #EEE;
+  aspect-ratio: 1/1;
+  position: relative;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.fixw{
+  width: 300px;
+  margin-left: 20%;
+}
+
+.principal{
+  text-align: center;
+  font-size: 3rem;
+  top: 9.8%;
+  position: relative;
+}
+
+.browser-warning {
+  margin-bottom: 4rem;
+}
+
+@supports (aspect-ratio: 1/1) {
+  .browser-warning {
+    display: none;
+  }
+}
