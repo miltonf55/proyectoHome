@@ -13,9 +13,10 @@ var frases = [
     "Acatlán significa “lugar entre cañas” en náhuatl. El nombre es un homenaje al pasado prehispánico de la región💚✨."
 ]
 
+
 piedroso.addEventListener("click", (event) => {
 
-    //var i = Math.floor(Math.random()*10000)%frases.length;
+    //useless
     var finalFrase = frases.shift();
     frases.push(finalFrase);
 
