@@ -25,20 +25,14 @@
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/taller.css" />
-  <!--
 
-TemplateMo 577 Liberty Market
-
-https://templatemo.com/tm-577-liberty-market
-
--->
 </head>
 
 <body>
 
   <img id="piedrosoBtn" class="piedroso" src="assets/images/piedroso.png" alt="piedroso">
   <!-- Modal -->
-  <div class="modal fade" id="piedrosoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="piedrosoModal" tabindex="-1" aria-labelledby="piedrosoModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -48,11 +42,25 @@ https://templatemo.com/tm-577-liberty-market
         <div class="modal-body">
           <p id="piedratext"></p>
         </div>
-        <!--div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div-->
       </div>
     </div>
+
+  </div>
+
+  <div class="modal fade" id="monumentosModal" tabindex="-1" aria-labelledby="monumentosModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="monumentoTitleTxt"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="monumentoBodyTxt"></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   </div>
 
@@ -124,10 +132,82 @@ https://templatemo.com/tm-577-liberty-market
         <div class="col-lg-5 offset-lg-1">
           <div class="owl-banner owl-carousel">
             <div class="item">
-              <img src="assets/images/banner-01.png" alt="">
+              <img src="assets/images/fesMain1.jpg" alt="">
             </div>
             <div class="item">
-              <img src="assets/images/banner-02.png" alt="">
+              <img src="assets/images/fesMain2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 g-0" id="piedra">
+          <div class="stack">
+            <div class="card">
+              <div class="image">
+                <img src="assets/images/rocaa.jpeg" alt="" srcset="">
+              </div>
+              <span class="tall2">PIEDRA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 g-0" id="sorJuana">
+          <div class="stack">
+            <div class="card">
+              <div class="image">
+                <img src="assets/images/sorJuana.jpg" alt=""
+                  srcset="">
+              </div>
+              <span class="tall2">SOR JUANA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 g-0" id="alas">
+          <div class="stack">
+            <div class="card">
+              <div class="image">
+                <img src="assets/images/alasDeLibertad.jpg" alt=""
+                  srcset="">
+              </div>
+              <span class="tall2">ALAS DE LIBERTAD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 g-0" id="autonomia">
+          <div class="stack">
+            <div class="card">
+              <div class="image">
+                <img src="assets/images/pikachu.jpg" alt="" srcset="">
+              </div>
+              <span class="tall2">MONUMENTO A LA AUTONOMÍA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 g-0" id="florida">
+          <div class="stack">
+            <div class="card">
+              <div class="image">
+                <img src="assets/images/guerraFlorida.jpg" alt=""
+                  srcset="">
+              </div>
+              <span class="tall2">GUERRA FLORIDA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 g-0" id="almaMater">
+          <div class="stack">
+            <div class="card">
+              <div class="image">
+                <img src="assets/images/almaMAter.jpg" alt=""
+                  srcset="">
+              </div>
+              <span class="tall2">MONUMENTO AL ALMA MATER</span>
             </div>
           </div>
         </div>
