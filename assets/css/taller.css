@@ -53,11 +53,23 @@ img {
   position: relative;
 }
 
+.titleQNC{
+  color: #002854 !important;
+  font-family: "Oswald";
+}
+
+.titleQNC2{
+  color: #000000 !important;
+  font-family: "Oswald";
+}
+
 .tall2{
   text-align: center;
   font-size: 1rem;
   top: 9.8%;
   position: relative;
+  color: #002854 !important;
+  font-family: "Oswald";
   
 }
 
