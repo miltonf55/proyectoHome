@@ -1,0 +1,17 @@
+.listR {
+    li {
+        color: #65645E;
+        font-size: 15px;
+        list-style: inside !important;
+    }
+}
+
+.titleQNC {
+    color: #002854 !important;
+    font-family: "Oswald";
+}
+
+.titleQNC2 {
+    color: #000000 !important;
+    font-family: "Oswald";
+}
