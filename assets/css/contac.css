@@ -1,0 +1,28 @@
+.contH {
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.card-header {
+    font-family: "Oswald";
+    font-size: 2rem;
+    color: #002854;
+}
+
+.logoIns {
+    width: 25%;
+}
+
+.text-body-secondary {
+    font-family: "Oswald";
+    color: #002854;
+}
+
+.piedroso {
+    position: fixed;
+    bottom: -3.7vh;
+    width: 20%;
+    right: -3.5vh;
+    z-index: 5555;
+    transform: rotate(-20deg);
+}
