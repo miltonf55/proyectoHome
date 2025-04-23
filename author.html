@@ -13,7 +13,8 @@
   <title>Qué Nadie Te Lo Cuente</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
 
   <!-- Additional CSS Files -->
@@ -23,6 +24,8 @@
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/taller.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <!--
 
 TemplateMo 577 Liberty Market
@@ -33,6 +36,22 @@ https://templatemo.com/tm-577-liberty-market
 </head>
 
 <body>
+
+  <!--Modal-->
+  <div class="modal fade" id="talleresModal" tabindex="-1" aria-labelledby="monumentosModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="talleresTitleTxt"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="talleresBodyTxt"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -80,6 +99,16 @@ https://templatemo.com/tm-577-liberty-market
 
   <div class="container cont">
     <div class="row">
+      <div class="typeE">
+        <p>
+          Si estás pensando en estudiar Comunicación en la FES Acatlán o acabas de entrar a la carrera, te tenemos
+          buenas noticias: aquí no todo es teoría. Desde los primeros semestres, vas a tener acceso a <b>talleres
+            especializados</b> que te preparan para el mundo real de los medios, la redacción y la producción
+          audiovisual.
+        </p><br>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-6">
         <p class="browser-warning">If this looks wonky to you it's because this browser doesn't support the CSS property
           'aspect-ratio'.</p>
@@ -93,48 +122,131 @@ https://templatemo.com/tm-577-liberty-market
         </div>
       </div>
       <div class="col-6">
+        <h4 class="titleQNC">Talleres de Redacción: tu primer contacto con la escritura profesional</h4><br>
+        <p>
+          En los primeros semestres, tendrás talleres de redacción donde aprenderás a escribir como se hace en los
+          medios: claro, directo y con intención. No importa si quieres dedicarte al periodismo, a las redes sociales
+          o a la comunicación institucional; saber escribir bien es clave, y aquí lo aprenderás con ejercicios
+          prácticos y asesoría personalizada.
+        </p><br>
+        <div class="limitCard">
+          <div class="stack">
+            <div class="card">
+              <div class="image">
+                <img src="assets/images/Consejos para Escribir un Ensayo Excelente_ Guía para Estudiantes.jpeg"
+                  alt="" srcset="">
+              </div>
+              <span class="tall2">TALLERES DE REDACCIÓN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-12">
+        <h4 class="titleQNC">Talleres Multimedia: lo mejor en la práctica audiovisual</h4><br>
+        <p>
+          Más adelante en la carrera,específicamente en quinto semestre llegarás a los <b>talleres multimedia</b>,
+          donde
+          podrás explorar áreas como:
+        </p>
+        <ul type="disc" class="listR">
+          <li>Radio</li>
+          <li>Televisión</li>
+          <li>Fotografía</li>
+          <li>Edición de video y audio</li>
+          <li>Proyectos multimedia interactivos</li>
+        </ul>
+        <p>
+          Estos talleres están equipados con tecnología de muy buen nivel. Y no es exageración: por ejemplo, el
+          <b>Taller de Televisión 2</b> y el <b>Taller de Radio 3</b> tienen incluso <b>certificaciones
+            nacionales</b>, lo que garantiza
+          que vas a trabajar con equipo de calidad profesional. Aquí podrás experimentar detrás de cámaras, frente al
+          micrófono o en la edición de materiales que podrían salir al aire.
+        </p>
+        <p><b>Lo importante: saldrás con experiencia real</b></p>
+        <p>
+          Más allá de lo técnico, lo chido de estos talleres es que te ayudan a <b>descubrir tus intereses</b>, pulir
+          tus
+          habilidades y formar portafolios reales que te servirán más adelante, tanto en prácticas profesionales como
+          en tu primer trabajo.
+        </p>
+        <p><b>Conoce los talleres multimedia de la carrera de Comunicación</b></p>
+        <p>
+          Una de las cosas más emocionantes de estudiar Comunicación en Acatlán es que no solo aprendes teoría:
+          <b>¡también
+            haces cosas!</b> A partir de los semestres intermedios, tendrás acceso a talleres donde vas a poder
+          experimentar
+          con distintas áreas de la producción audiovisual y digital. Aquí te contamos un poco más sobre algunos de
+          ellos:
+        </p><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
         <div class="row">
-          <div class="col-6 g-0">
+          <div class="col-4 g-0" id="radio">
             <div class="stack">
               <div class="card">
                 <div class="image">
                   <img src="assets/images/Radio 101_ Radio _Dictionary_ for National Radio Day.jpeg" alt="" srcset="">
                 </div>
-                <span class="tall">RADIO</span>
+                <span class="tall2">TALLER DE RADIO</span>
               </div>
             </div>
           </div>
-          <div class="col-6 g-0">
+          <div class="col-4 g-0" id="television">
             <div class="stack">
               <div class="card">
                 <div class="image">
                   <img src="assets/images/b2a20efe-7a2c-40b3-8c01-d3d517f3690a.jpeg" alt="" srcset="">
                 </div>
-                <span class="tall">TELEVISIÓN</span>
+                <span class="tall2">TALLER DE TELEVISIÓN</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 g-0" id="foto">
+            <div class="stack">
+              <div class="card">
+                <div class="image">
+                  <img src="assets/images/fotoTaller.webp" alt="" srcset="">
+                </div>
+                <span class="tall2">TALLER DE FOTOGRAFÍA</span>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-6 g-0">
+          <div class="col-4 g-0" id="multimedia">
             <div class="stack">
               <div class="card">
                 <div class="image">
                   <img src="assets/images/IDEAS DE NEGOCIOS QUE PUEDES CREAR EN TU CASA.jpeg" alt="" srcset="">
                 </div>
-                <span class="tall">MULTIMEDIA</span>
+                <span class="tall2">TALLER DE PROYECTOS MULTIMEDIA</span>
               </div>
             </div>
           </div>
 
-          <div class="col-6 g-0">
+          <div class="col-4 g-0" id="video">
             <div class="stack">
               <div class="card">
                 <div class="image">
-                  <img src="assets/images/Consejos para Escribir un Ensayo Excelente_ Guía para Estudiantes.jpeg"
+                  <img src="assets/images/tallerEVideo.webp"
                     alt="" srcset="">
                 </div>
-                <span class="tall">REDACCIÓN</span>
+                <span class="tall2">TALLER DE EDICIÓN DE VIDEO</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 g-0" id="audio">
+            <div class="stack">
+              <div class="card">
+                <div class="image">
+                  <img src="assets/images/tallerEAudio.jpeg"
+                    alt="" srcset="">
+                </div>
+                <span class="tall2">TALLER DE EDICIÓN DE AUDIO</span>
               </div>
             </div>
           </div>
@@ -158,8 +270,14 @@ https://templatemo.com/tm-577-liberty-market
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
@@ -167,6 +285,7 @@ https://templatemo.com/tm-577-liberty-market
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/talleres.js"></script>
 </body>
 
 </html>

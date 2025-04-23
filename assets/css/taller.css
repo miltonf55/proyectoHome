@@ -107,6 +107,14 @@ img {
   padding: 5% 5% 15% 5%;
 }
 
+.listR{
+  li{
+    color: #65645E;
+    font-size: 15px;
+    list-style: inside !important;
+  }
+}
+
 .card:before,
 .card:after {
   content: "";
@@ -149,11 +157,25 @@ img {
   margin-left: 20%;
 }
 
+.typeE{
+  margin-top: 3%;
+}
+
 .principal{
   text-align: center;
   font-size: 3rem;
   top: 9.8%;
   position: relative;
+  color: #002854;
+}
+
+.limitCard{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .stack{
+    width: 50%;
+  }
 }
 
 .browser-warning {
