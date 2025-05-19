@@ -1,0 +1,70 @@
+#juego {
+    opacity: 0.8;
+    width: 625px;
+    height: 625px;
+}
+
+table {
+    width: 95%;
+    height: 95%;
+}
+
+td {
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+
+}
+
+.letra {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+input {
+    width: 100px;
+    height: 30px;
+}
+
+.buttonPlay {
+    a {
+        font-size: 14px;
+        color: #65645E;
+        background-color: transparent;
+        border: 1px solid #74D1EA;
+        padding: 12px 30px;
+        display: inline-block;
+        border-radius: 25px;
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+        width: 25rem;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    a:hover {
+        background-color: #74D1EA;
+        color: #fff;
+    }
+
+}
+
+.center {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hideCart{
+    display:none;
+}

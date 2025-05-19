@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/taller.css" />
+  <link rel="stylesheet" href="assets/css/memorama.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
@@ -64,6 +65,57 @@
 
   </div>
 
+  <div class="modal fade" id="memoramModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="memoramModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Memorama</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="center">
+            <div id="juego">
+              <table>
+                <tr>
+                  <td id="0" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="100" class="hideCart" src=""></td>
+                  <td id="1" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="101" class="hideCart" src=""></td>
+                  <td id="2" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="102" class="hideCart" src=""></td>
+                  <td id="3" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="103" class="hideCart" src=""></td>
+                </tr>
+                <tr>
+                  <td id="4" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="104" class="hideCart" src=""></td>
+                  <td id="5" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="105" class="hideCart" src=""></td>
+                  <td id="6" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="106" class="hideCart" src=""></td>
+                  <td id="7" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="107" class="hideCart" src=""></td>
+                </tr>
+                <tr>
+                  <td id="8" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="108" class="hideCart" src=""></td>
+                  <td id="9" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="109" class="hideCart" src=""></td>
+                  <td id="10" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="110" class="hideCart" src=""></td>
+                  <td id="11" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="111" class="hideCart" src=""></td>
+                </tr>
+                <tr>
+                  <td id="12" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="112" class="hideCart" src=""></td>
+                  <td id="13" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="113" class="hideCart" src=""></td>
+                  <td id="14" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="114" class="hideCart" src=""></td>
+                  <td id="15" class="letra" onclick="girarCarta()" data-valor="valor">? <img id="115" class="hideCart" src=""></td>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <input type="button" value="Iniciar" onclick="iniciarJuego()" />
+              <input type="button" value="Reiniciar" onclick="resetearJuego()" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </div>
 
   <!-- ***** Preloader Start ***** -->
@@ -95,7 +147,7 @@
               <li><a href="index.html" class="active">Nosotros</a></li>
               <li><a href="details.html">Especialidades</a></li>
               <li><a href="projects.html">Proyectos en marcha</a></li>
-              <li><a href="explore.html">Galería multimedia</a></li>
+              <li><a href="explore.html">Vídeos y fotos</a></li>
               <li><a href="author.html">Talleres</a></li>
               <li><a href="create.html">Contacto</a></li>
             </ul>
@@ -154,6 +206,11 @@
               <img src="assets/images/fesMain2.jpg" alt="">
             </div>
           </div-->
+          <div class="center">
+            <div class="buttonPlay">
+              <a id="playGame">JUEGA</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -258,6 +315,7 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/piedroso.js"></script>
+  <script src="assets/js/memorama.js"></script>
 
 </body>
 
