@@ -48,12 +48,15 @@ function resetearJuego() {
     }
 }
 
-function girarCarta() {
+function girarCarta(id) {
     var evento = window.event;
 
-    jugada2 = evento.target.dataset.valor;
-    identificadorJ2 = evento.target.id;
+    var dato = document.getElementById(id);
+    jugada2 = dato.dataset.valor;
+    identificadorJ2 = id;
 
+    console.log(jugada1, jugada2, identificadorJ1, identificadorJ2);
+    
 
     if (jugada1 !== "") {
 
@@ -62,7 +65,7 @@ function girarCarta() {
             cartas[parseInt(identificadorJ1)].seleccion = true;
             cartas[parseInt(identificadorJ2)].seleccion = true;
 
-            colorCambio(identificadorJ2, "blue", jugada2);
+            colorCambio(identificadorJ2, "linen", jugada2);
             switchImg(Number(identificadorJ2) + 100, 'initial');
             vaciar();
             comprobar();
@@ -76,12 +79,12 @@ function girarCarta() {
                 vaciar()
             }, 200);
 
-            colorCambio(identificadorJ2, "blue", jugada2);
+            colorCambio(identificadorJ2, "linen", jugada2);
             switchImg(Number(identificadorJ2) + 100, 'initial');
         }
     } else if (jugada2 !== "valor") {
 
-        colorCambio(identificadorJ2, "blue", jugada2);
+        colorCambio(identificadorJ2, "linen", jugada2);
         switchImg(Number(identificadorJ2) + 100, 'initial');
 
         jugada1 = jugada2;
@@ -102,12 +105,14 @@ function colorCambio(posicion, color, contenido) {
     //document.getElementById(posicion.toString()).innerHTML = contenido;
 }
 
-function switchImg(posicion, display) {
-    console.log(posicion, display);
+function switchImg(posicion, display) {    
+    var askId = Number(posicion) + 100;
     if (display == 'none') {
         $("#" + posicion).hide()
+        $("#" + askId).show()
     } else {
         $("#" + posicion).show()
+        $("#" + askId).hide()
     }
 }
 
@@ -121,8 +126,9 @@ function comprobar() {
     }
 
     if (aciertos == 16) {
-        document.getElementById("juego").innerHTML = "Felicidades Ganaste!!!";
-
+        setTimeout(() => {
+            resetearJuego();
+        }, "5000");
     }
 }
 
