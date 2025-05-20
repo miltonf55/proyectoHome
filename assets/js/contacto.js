@@ -19,7 +19,7 @@ ameAmorDeMiVida.addEventListener("click", (event) => {
 
 valentina.addEventListener("click", (event) => {
     $('#profileImg').attr("src","assets/images/valentina.jpeg");
-    $('#textNameCard').text("Valentina Guerrer")
+    $('#textNameCard').text("Valentina Guerrero")
     $('#textBodyCard').text("Hola 👋🏻👋🏻 soy Valentina Guerrero y yo soy la Scrum máster del equipo de Que Nadie te lo Cuente, también formo parte del equipo de redacción. Como próxima exalumna espero que esta página les sea de ayuda y le ahorre unos cuantos dolores de cabeza. A mi me encanta la carrera porque me permite explorar todas mis pasiones, espero que para ustedes también sea un experiencia inolvidable y llena de aprendizaje.")
     $("#cardP").show()
 });
