@@ -26,3 +26,32 @@
     z-index: 5555;
     transform: rotate(-20deg);
 }
+
+.profilePicture{
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.profilePicture:hover {
+  opacity: 0.55;
+}
+.centerEl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardProfile{
+    max-width: 88%;
+}
+
+.typeE{
+    margin-top: 3%;
+}
+
+.hide{
+    display: none;
+}
