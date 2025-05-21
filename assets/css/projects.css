@@ -9,3 +9,11 @@
 .active{
     background-color: #EBA70E !important;
 }
+
+.listR{
+  li{
+    color: #65645E;
+    font-size: 15px;
+    list-style: inside !important;
+  }
+}

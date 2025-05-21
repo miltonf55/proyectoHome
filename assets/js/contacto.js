@@ -26,7 +26,7 @@ valentina.addEventListener("click", (event) => {
 
 d.addEventListener("click", (event) => {
     $('#profileImg').attr("src","assets/images/diego.jpeg");
-    $('#textNameCard').text("Diego")
-    $('#textBodyCard').text("Soy Diego")
+    $('#textNameCard').text("Diego Gonzalez")
+    $('#textBodyCard').text("Yo soy Diego 🤠, y soy estudiante de la FES Acatlán en la carrera de comunicación. Estoy apunto de terminar la carrera y con esta página web espero que puedas aprender e informarte un poco más sobre esta bonita experiencia que estás considerando vivir. Si esta página te ayuda en algo, mi objetivo está más que cumplido. :)")
     $("#cardP").show()
 });
